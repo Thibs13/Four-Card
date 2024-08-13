@@ -1,0 +1,118 @@
+body{
+    background-color: hsl(0, 0%, 98%);
+}
+header{
+    margin-top: 15%;
+    font-family: Poppins;
+    text-align: center;
+    padding: 3%;
+}
+header h2{
+    font-weight: 200;
+    font-size: 19px;
+}
+header h1{
+    font-weight: 600;
+    font-size: 19px;
+    margin-top: -20px;
+}
+header p{
+    font-weight: 200;
+    color: hsl(229, 6%, 66%);
+    font-size: 13px;
+}
+.item{
+    width: 85%;
+    height: 170px;
+    margin: auto;
+    margin-top: 9%;
+    border-radius: 5px;
+    padding: 4%;
+    border-top-width: thick;
+    position: relative;
+    box-shadow: 1px 8px 13px hsl(229, 6%, 66%); 
+}
+.item:hover{
+    background-color: rgb(240, 240, 240);
+    transition: 0.6 ease-in;
+    cursor: pointer;
+}
+img{
+    height: 45px;
+    width: 45px;
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+}
+.item h3{
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 3%;
+}
+.item p{
+    font-weight: 200;
+    margin-top: -10px;
+    line-height: 20px;
+    font-family: Poppins;
+    color: hsl(229, 6%, 66%);
+    font-size: 13px;
+}
+.left-bloc{
+    border-top: 5px solid hsl(180, 62%, 55%);
+}
+.top-mid-bloc{
+    border-top: 5px solid hsl(0, 78%, 62%);
+}
+.bot-mid-bloc{
+    border-top: 5px solid hsl(34, 97%, 64%);
+}
+.right-bloc{
+    border-top: 5px solid hsl(212, 86%, 64%);
+}
+@media screen and (min-width: 1171px) {
+    header h1{
+        font-weight: 600;
+        font-size: 32px;
+        margin-top: -20px;
+    }
+    header h2{
+        font-weight: 200;
+        font-size: 32px;
+    }
+    header{
+        margin: auto;
+        margin-top: 1%;
+        width: 50%;
+    }
+    header p{
+        font-size: 26px;
+        text-align: center;
+    }
+    section{
+        position: static;
+        width: 32%;
+    }
+    main{
+        display: grid;
+        width: 60%;
+        grid-template-columns: repeat(3,1fr);
+        margin: auto;
+        margin-top: -3%;
+        align-items: center;
+    }
+    section{
+        width: 100%;
+        height: 600px;
+    }
+    .item{
+        height: 65%;
+        max-height: 200px;
+    }
+    .right-bloc{
+        transform: translateY(60%);
+    }
+    .left-bloc{
+        transform: translateY(60%);
+    }
+}
